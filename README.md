@@ -1,4 +1,4 @@
-# AngularJSArchitectureExample
+# AngularJS Architecture Example
 Example of minimun configuration of AngularJS
 
 I'm use in this example the next components:
