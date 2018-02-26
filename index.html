@@ -1,33 +1,32 @@
-<html lang="en" >
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Angular Material style sheet -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-</head>
-<body ng-app="exampleApp" ng-cloak>
-  <div ng-view></div>
+<!DOCTYPE html>
+<html>
 
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<body>
+<div ng-app="rubick">
 
-  <!-- Angular Material Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-  
-  <!-- Your application bootstrap  -->
-  <script type="text/javascript">    
-    /**
-     * You must include the dependency on 'ngMaterial' 
-     */
-    angular.module('BlankApp', ['ngMaterial']);
-  </script>
-  
+
+<a href="#!london">City 1</a>
+<a href="#!paris">City 2</a>
+<a href="#!">Home</a>
+
+<div ng-view=""></div>
+
+
+<!-- Plugins -->
+<script type="text/javascript" src="http://cllofision01p/Estatico/js/1.6.7/angular.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://cllofision01p/Estatico/js/1.6.7/angular-route.min.js" charset="utf-8"></script>
+<!-- App -->
+<script type="text/javascript" src="app/scripts/app.js" charset="utf-8"></script>
+<!-- Services -->
+<script type="text/javascript" src="app/scripts/services/SeguroService.js" charset="utf-8"></script>
+<script type="text/javascript" src="app/scripts/services/UrlService.js" charset="utf-8"></script>
+<!-- Controller -->
+<script type="text/javascript" src="app/scripts/controllers/SeguroController.js" charset="utf-8"></script>
+
+
+</div>
+
+
+
 </body>
 </html>
-
-<!--
-Copyright 2016 Google Inc. All Rights Reserved. 
-Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at https://material.angularjs.org/license.
--->
